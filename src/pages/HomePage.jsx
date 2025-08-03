@@ -1,5 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Card from "../components/Card";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
     return (
@@ -22,51 +24,15 @@ export default function HomePage() {
                     <div className="container">
                         <h3 className="text-center fs-2 m-5">Potrebbero interessarti alcuni di questi film</h3>
                         <div className="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-3">
-                            <div className="col">
-                                <div class="card">
-                                    <img src="https://st.depositphotos.com/2274151/4841/i/450/depositphotos_48410095-stock-photo-sample-blue-square-grungy-stamp.jpg" class="card-img-top" alt="movie_cover" />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titolo film</h5>
-                                        <p class="card-text">Trama del film</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div class="card">
-                                    <img src="https://st.depositphotos.com/2274151/4841/i/450/depositphotos_48410095-stock-photo-sample-blue-square-grungy-stamp.jpg" class="card-img-top" alt="movie_cover" />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titolo film</h5>
-                                        <p class="card-text">Trama del film</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div class="card">
-                                    <img src="https://st.depositphotos.com/2274151/4841/i/450/depositphotos_48410095-stock-photo-sample-blue-square-grungy-stamp.jpg" class="card-img-top" alt="movie_cover" />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titolo film</h5>
-                                        <p class="card-text">Trama del film</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div class="card">
-                                    <img src="https://st.depositphotos.com/2274151/4841/i/450/depositphotos_48410095-stock-photo-sample-blue-square-grungy-stamp.jpg" class="card-img-top" alt="movie_cover" />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titolo film</h5>
-                                        <p class="card-text">Trama del film</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div class="card">
-                                    <img src="https://st.depositphotos.com/2274151/4841/i/450/depositphotos_48410095-stock-photo-sample-blue-square-grungy-stamp.jpg" class="card-img-top" alt="movie_cover" />
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titolo film</h5>
-                                        <p class="card-text">Trama del film</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <Card />
+
+                            <Card />
+
+                            <Card />
+
+                            <Card />
+
+                            <Card />
                         </div>
                         <div className="text-center">
                             <h3 className="text-center fs-2 m-5"> Accedi alla lista completa dei film dispomibili da questo pulsante</h3>
