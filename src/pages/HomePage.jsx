@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Card from "../components/Card";
 import MoviesList from "../components/MoviesList";
 import { Link } from "react-router-dom";
+import SingleMoviePage from "./SingleMoviePage";
 
 export default function HomePage() {
     return (

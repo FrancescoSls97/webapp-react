@@ -6,12 +6,19 @@ export default function MoviesList() {
     const { movies } = useGlobalContext()
 
     return (
-        <div className="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-3">
-            {movies.map(movie => (
+        <>
+            {movies.length === 0 ? (
+                <p>Loading...</p>
+            ) : (
+                <div className="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-3">
+                    {movies.map(movie => (
 
-                <Card movie={movie} key={movie.id} />
+                        <Card movie={movie} key={movie.id} />
 
-            ))}
-        </div>
+                    ))}
+                </div>
+
+            )}
+        </>
     )
 }

@@ -13,7 +13,6 @@ function GlobalProvider({ children }) {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-
                 setMovies(data)
 
             })
