@@ -4,7 +4,7 @@ const GlobalContext = createContext()
 
 function GlobalProvider({ children }) {
 
-    const api_server_url = import.meta.env.VITE_BACKEND_API_SERVER
+    const api_server_url = import.meta.env.VITE_BACKEND_API_SERVER + import.meta.env.VITE_BACKEND_MOVIES_ENDPOINT
     const [movies, setMovies] = useState([])
     console.log(api_server_url);
 

@@ -29,14 +29,7 @@ export default function HomePage() {
 
                         <MoviesList />
 
-                        <h3 className="text-center fs-2 m-5"> Dicci la tua su un film</h3>
-                        <div className="card p-4">
-                            <form>
-                                <input type="text" className="form-control m-2" placeholder="Nome del film" />
-                                <input type="text" className="form-control m-2" placeholder="Nickname" />
-                                <textarea className="form-control m-2" rows="2" placeholder="Scrivi qui la tua recensione"></textarea>
-                            </form>
-                        </div>
+
                     </div>
                 </section>
             </main>

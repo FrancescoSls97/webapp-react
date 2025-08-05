@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 
 export default function SingleMoviePage() {
     const { id } = useParams()
-    const api_server_url = `${import.meta.env.VITE_BACKEND_API_SERVER}/${id}`
+    const api_server_url = `${import.meta.env.VITE_BACKEND_API_SERVER + import.meta.env.BACKEND_MOVIES_ENDPOINT}/${id}`
     const [movie, setMovie] = useState([])
 
     useEffect(() => {
@@ -44,6 +44,15 @@ export default function SingleMoviePage() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <h3 className="text-center fs-2 m-5"> Dicci la tua su un film</h3>
+                    <div className="card p-4">
+                        <form>
+                            <input type="text" className="form-control m-2" placeholder="Nome del film" />
+                            <input type="text" className="form-control m-2" placeholder="Nickname" />
+                            <textarea className="form-control m-2" rows="2" placeholder="Scrivi qui la tua recensione"></textarea>
+                        </form>
                     </div>
                 </>
             )}
